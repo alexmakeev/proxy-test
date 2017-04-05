@@ -13,7 +13,10 @@ app.use('/proxy', proxy({
   },
   // secure: true,
   // protocolRewrite: true,
-  // autoRewrite: true,
+  hostRewrite: true,
+  autoRewrite: true,
+  protocolRewrite: true,
+  xfwd: false,
   router: function (req) {
     return 'http://webfoundation.org';
   },
