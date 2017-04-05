@@ -13,7 +13,7 @@ app.use('/proxy', proxy({
   },
   // secure: true,
   // protocolRewrite: true,
-  hostRewrite: true,
+  // hostRewrite: true,
   autoRewrite: true,
   // protocolRewrite: true,
   xfwd: false,
